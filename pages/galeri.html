@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-school"></i> Admin Panel</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class="menu-item"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="profil-sekolah.html" class="menu-item"><i class="fas fa-building"></i> Profil Sekolah</a></li>
+                <li><a href="data-guru.html" class="menu-item"><i class="fas fa-chalkboard-teacher"></i> Data Guru</a></li>
+                <li><a href="data-siswa.html" class="menu-item"><i class="fas fa-user-graduate"></i> Data Siswa</a></li>
+                <li><a href="berita.html" class="menu-item"><i class="fas fa-newspaper"></i> Berita</a></li>
+                <li><a href="galeri.html" class="menu-item active"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="pengumuman.html" class="menu-item"><i class="fas fa-bullhorn"></i> Pengumuman</a></li>
+                <li><a href="prestasi.html" class="menu-item"><i class="fas fa-trophy"></i> Prestasi</a></li>
+                <li><a href="laporan.html" class="menu-item"><i class="fas fa-file-alt"></i> Laporan</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <button class="toggle-btn" id="toggleSidebarBtn"><i class="fas fa-bars"></i></button>
+                <div class="topbar-right">
+                    <div class="admin-profile">
+                        <span>Admin Sekolah</span>
+                        <img src="https://via.placeholder.com/35" alt="Profile">
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="mb-3" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2>Galeri Kegiatan</h2>
+                    <button class="btn btn-primary" onclick="alert('Buka Form Tambah Foto')"><i class="fas fa-plus"></i> Tambah Foto</button>
+                </div>
+                
+                <div class="gallery-grid" id="galleryContainer">
+                    <!-- Item 1 -->
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/400x250.png?text=Kegiatan+Pramuka" alt="Pramuka" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>Kegiatan Pramuka</h4>
+                            <p class="text-muted"><i class="far fa-calendar-alt"></i> 14 Agustus 2026</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-outline btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger btn-icon" title="Hapus"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/400x250.png?text=Upacara+Bendera" alt="Upacara" class="gallery-img">
+                        <div class="gallery-info">
+                            <h4>Upacara Bendera 17 Agustus</h4>
+                            <p class="text-muted"><i class="far fa-calendar-alt"></i> 17 Agustus 2026</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-outline btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger btn-icon" title="Hapus"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

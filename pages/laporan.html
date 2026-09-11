@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan - Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-school"></i> Admin Panel</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class="menu-item"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="profil-sekolah.html" class="menu-item"><i class="fas fa-building"></i> Profil Sekolah</a></li>
+                <li><a href="data-guru.html" class="menu-item"><i class="fas fa-chalkboard-teacher"></i> Data Guru</a></li>
+                <li><a href="data-siswa.html" class="menu-item"><i class="fas fa-user-graduate"></i> Data Siswa</a></li>
+                <li><a href="berita.html" class="menu-item"><i class="fas fa-newspaper"></i> Berita</a></li>
+                <li><a href="galeri.html" class="menu-item"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="pengumuman.html" class="menu-item"><i class="fas fa-bullhorn"></i> Pengumuman</a></li>
+                <li><a href="prestasi.html" class="menu-item"><i class="fas fa-trophy"></i> Prestasi</a></li>
+                <li><a href="laporan.html" class="menu-item active"><i class="fas fa-file-alt"></i> Laporan</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <button class="toggle-btn" id="toggleSidebarBtn"><i class="fas fa-bars"></i></button>
+                <div class="topbar-right">
+                    <div class="admin-profile">
+                        <span>Admin Sekolah</span>
+                        <img src="https://via.placeholder.com/35" alt="Profile">
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="mb-3" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2>Laporan Ringkasan Sistem</h2>
+                    <div>
+                        <button class="btn btn-outline" onclick="alert('Fungsi Export/Download (Simulasi)')"><i class="fas fa-download"></i> Export CSV</button>
+                        <button class="btn btn-primary" id="btnCetak"><i class="fas fa-print"></i> Cetak Laporan</button>
+                    </div>
+                </div>
+                
+                <div class="card" id="printArea">
+                    <div style="text-align: center; margin-bottom: 2rem; border-bottom: 2px solid #ccc; padding-bottom: 1rem;">
+                        <h2>LAPORAN SISTEM INFORMASI PROFIL SEKOLAH</h2>
+                        <p class="text-muted">Tanggal Cetak: <span id="printDate"></span></p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-info" style="border: none; padding: 0;">
+                                <h4>Total Guru</h4>
+                                <p id="lapTotalGuru">0</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info" style="border: none; padding: 0;">
+                                <h4>Total Siswa</h4>
+                                <p id="lapTotalSiswa">0</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info" style="border: none; padding: 0;">
+                                <h4>Total Berita</h4>
+                                <p id="lapTotalBerita">0</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info" style="border: none; padding: 0;">
+                                <h4>Total Prestasi</h4>
+                                <p id="lapTotalPrestasi">0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3>Statistik Aktivitas Website</h3>
+                        <p>Laporan menunjukkan peningkatan kunjungan pada periode Penerimaan Siswa Baru. Konten berita yang paling sering diakses adalah mengenai jadwal ujian dan pendaftaran ulang.</p>
+                        <p class="text-muted mt-2">Dibuat secara otomatis oleh sistem.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        document.getElementById('printDate').innerText = new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+</body>
+</html>
