@@ -128,7 +128,7 @@ Data mock akan disimpan dalam bentuk Object/Array JavaScript di dalam `script.js
 
 ## 12. Link Figma
 ![Preview Desain UI]
-[Link Figma] (https://www.figma.com/design/ff6CepBlkle4b7pkvT5jL8/Untitled?node-id=0-1&t=gWZozlB0NXr41bMY-1)
+[Link Figma] https://www.figma.com/design/fO8L8b0tNmOYAvTvG3pCBQ/Untitled?node-id=0-1&t=pzyR0uZLAAF67mc5-1
 
 ## 13.google stit
 Link stitch google saya:https://stitch.withgoogle.com/projects/5864170136848524120
