@@ -131,5 +131,5 @@ Data mock akan disimpan dalam bentuk Object/Array JavaScript di dalam `script.js
 [Link Figma] (https://www.figma.com/design/ff6CepBlkle4b7pkvT5jL8/Untitled?node-id=0-1&t=gWZozlB0NXr41bMY-1)
 
 ## 13.google stit
-Link stitch google saya:https://stitch.withgoogle.com/projects/10384429772660630
+Link stitch google saya:https://stitch.withgoogle.com/projects/5864170136848524120
 
